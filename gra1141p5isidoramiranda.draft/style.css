@@ -1,17 +1,144 @@
 body {
 	margin: 0;
-	background-color: lightblue;
+	background-color: rgba(100,27,38,1.00);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(url);
 }
+body wrapper footer {
+	margin-top: 605px;
+	padding-left: 0px;
+}
+
+
 wrapper {
-	margin: auto;
+	margin-top: auto;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
 	display: block;
 	width: 1366px;
 	background-color: rgba(255,255,255,0.48);
 	padding: 10px;
+	max-height: 0px;
+	text-align: center;
 }
 main {
-	height: 500px;
+	height: 800px;
+	background-image: url(Templates/lana-del-rey-album.png);
+	background-size: auto auto;
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	margin-top: -62px;
+	display: block;
+	font-size: 0px;
 }
+.content-album {
+	margin-left: 9px;
+	margin-top: 396px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.img-music {
+	margin-top: -527px;
+	padding-top: 1px;
+	padding-bottom: 213px;
+}
+
+.content-music {
+	margin-left: 14px;
+	padding-top: 1px;
+	padding-bottom: 0px;
+}
+
+.mailing-3 {
+	color: rgba(255,255,255,1.00);
+}
+
+.mailing-2 {
+	color: rgba(255,255,255,1.00);
+}
+
+.mailing-content {
+	padding-right: 100px;
+	padding-left: 100px;
+	color: rgba(255,255,255,1.00);
+}
+
+.content {
+	font-size: 25px;
+	margin-top: -590px;
+	margin-left: 89px;
+	margin-right: 89px;
+}
+
+wrapper main img {
+	max-height: 500px;
+	max-width: 500px;
+	margin-top: 197px;
+	margin-left: -776px;
+}
+
+.img.gallery2 {
+}
+
+.img-gallery1 {
+	max-width: 400px;
+	margin-left: -679px;
+	margin-top: -412px;
+	margin-bottom: 240px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+body wrapper h5 {
+	font-size: 25px;
+	color: rgba(255,255,255,1.00);
+}
+
+body wrapper h5 {
+	margin-left: -802px;
+	font-size: 25px;
+	margin-top: -4px;
+	color: rgba(255,255,255,1.00);
+}
+
+body wrapper h4 {
+	margin-left: -810px;
+	font-size: 25px;
+	margin-top: -2px;
+	color: rgba(255,255,255,1.00);
+}
+
+
+body wrapper h3 {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	display: block;
+	margin-top: -647px;
+	margin-left: -822px;
+	font-size: 53px;
+	color: white;
+	font-family: "Cormorant Upright", serif;
+}
+
+
+wrapper main h2 {
+	font-weight: 600;
+	font-size: 70px;
+	text-align: center;
+	font-family: "Cormorant Upright", serif;
+	color: rgba(255,255,255,1.00);
+	padding-top: 69px;
+}
+
+wrapper main footer {
+}
+
+
+
 nav {
 	background-color: black;
 	color: rgba(255,255,255,1.00);
@@ -21,9 +148,35 @@ nav a {
 
 }
 nav a li {
-	padding: 10px 20px;
+	padding: 15px 25px;
 	display: inline-block;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
 }
 nav a li:hover {
-	background-color: red;
+	background-color: rgba(138,32,54,1.00);
+}
+wrapper header h1 {
+	font-weight: 500;
+	font-size: 90px;
+	font-family: "Pinyon Script", cursive;
+	color: rgba(255,255,255,1.00);
+}
+.polera {
+	margin-top: -21px;
+}
+.hoodie {
+	margin-left: 135px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-top: 5px;
+}
+
+.blog {
+	font-size: 22px;
+	margin-left: 31px;
+	margin-right: -61px;
+	padding-top: 64px;
 }
