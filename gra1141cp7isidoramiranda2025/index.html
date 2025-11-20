@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Welcome to Isidora's travel</title>
+<style type="text/css">
+body {
+	margin: 0px;
+	background-color: rgba(218,248,255,1.00);
+}
+wrapper {
+	width: 1200px;
+	margin: auto;
+	display: block;
+}
+header {
+	height: 100px;
+	background-color: rgba(255,249,98,1.00);
+}
+#Tabs1 img {
+	width: 60px;
+	height: auto;
+}
+#Tabs1 ul p {
+	text-align: center;
+}
+#Tabs1 {
+}
+#Tabs1 li {
+}
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+
+<body>
+<wrapper>
+  <header></header>
+  <header></header>
+  <main>
+    <div id="Tabs1">
+      <ul>
+        <li><a href="#tabs-1"><img src="avionsinfondo.png"="" width="700" height="700">
+          <p>Flights</p>
+        </a></li>
+        <li><a href="#tabs-2"><img src="hotelsinfondo1.png" alt="" width="" height="">
+          <p>Hotels</p>
+        </a></li>
+        <li><a href="#tabs-3"><img src="autosinfondo.png" alt="" width="700" height="700">
+          <p>Rentals</p>
+        </a></li>
+        <li><a href="#tabs-4"><img src="crucerosinfondo1.png" alt="" width="700" height="700">
+          <p>Cruises</p>
+        </a></li>
+        <li><a href="#tabs-5"><img src="camarasinfondo.png" alt="" width="700" height="700">
+          <p>Tourism</p>
+        </a></li>
+      </ul>
+      <div id="tabs-1">
+        <p>Content 1</p>
+      </div>
+      <div id="tabs-2">
+        <p>Content 2</p>
+      </div>
+      <div id="tabs-3">
+        <p>Content 3</p>
+      </div>
+      <div id="tabs-4">
+        <p>Content 4</p>
+      </div>
+      <div id="tabs-5">
+        <p>Content 5</p>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+</wrapper>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>
