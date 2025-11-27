@@ -6,7 +6,25 @@
 <style type="text/css">
 body {
 	margin: 0px;
-	background-color: rgba(218,248,255,1.00);
+	background-image: url(japan.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+#Tabs1 div {
+	background-color: rgba(255,255,255,0.26);
+	align-items: center;
+	justify-content: center;
+	display:flex;
+}
+#Tabs1 ul {
+	background-image: none;
+	border: none;
+	background-color: rgba(255,255,255,0.46);
+	align-items: center;
+	justify-content: center;
+	display:flex;
+	
 }
 wrapper {
 	width: 1200px;
@@ -15,7 +33,9 @@ wrapper {
 }
 header {
 	height: 100px;
-	background-color: rgba(255,249,98,1.00);
+	padding-bottom: 70px;
+	background-color: rgba(255,255,255,0.52);
+	
 }
 #Tabs1 img {
 	width: 60px;
@@ -25,8 +45,37 @@ header {
 	text-align: center;
 }
 #Tabs1 {
+	background-color:rgba(255,255,255,0.49); 
+}
+#Tabs1 ul li {
+	background-image: none;
+	background-color: rgba(255,255,255,0.52);
+}
+#Tabs1 ul li :hover {
+	background-color: rgba(255,255,255,1.00);
 }
 #Tabs1 li {
+}
+.search {
+	background-color: rgba(219,247,255,1.00);
+}
+input, select {
+	border-radius: 5px;
+	padding: 10px;
+}
+.logo {
+    width: 400px;
+    height: 350px;
+    margin-left: 400px;
+    position: absolute;
+    text-align: center;
+    margin-top: -116px;
+    padding-bottom: 0px;
+}
+.foot {
+    margin-top: 200px;
+    background-color: rgba(255,255,255,0.62);
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 }
 </style>
 <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
@@ -35,19 +84,22 @@ header {
 <script src="jQueryAssets/jquery-1.11.1.min.js"></script>
 <script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
 </head>
+	</style>
 
 <body>
 <wrapper>
-  <header></header>
-  <header></header>
-  <main>
+  <header><img src="Blue%20and%20White%20Plane%20Travel%20Agency%20Logo.png" alt="" width="500" height="500" class="logo"></header>
+<main>
     <div id="Tabs1">
       <ul>
-        <li><a href="#tabs-1"><img src="avionsinfondo.png"="" width="700" height="700">
+        <li>
+			<a href="#tabs-1"><img src="avionsinfondo.png"="" width="700" height="700">
           <p>Flights</p>
         </a></li>
-        <li><a href="#tabs-2"><img src="hotelsinfondo1.png" alt="" width="" height="">
+        <li><a href="#tabs-2" title="Where to?"><img src="hotelsinfondo1.png" alt="" width="" height="">
           <p>Hotels</p>
+			
+			
         </a></li>
         <li><a href="#tabs-3"><img src="autosinfondo.png" alt="" width="700" height="700">
           <p>Rentals</p>
@@ -60,23 +112,63 @@ header {
         </a></li>
       </ul>
       <div id="tabs-1">
-        <p>Content 1</p>
+        <p>Flights</p>
+        <input type="text" placeholder="Leaving from"><input type="date">
+		  <input type="text" placeholder="Going to">
+		  <input type="date">
+<select>
+	
+	      <option value="1">Number of travelers</option>
+	      <option value="2"></option>
+	      <option value="3"></option>
+	      <option value="4"></option>
+	      <option value="5"></option>
+	    </select>
+		  <input type="submit" class="search" value="Search">
+		  
       </div>
       <div id="tabs-2">
-        <p>Content 2</p>
+        <p>Hotels</p><input type="text" placeholder="Where to?"><input type="date">
+		  <select>
+		    <option value="1">Guests</option>
+		    <option value="2"></option>
+		    <option value="3"></option>
+		    <option value="4"></option>
+		    <option value="5"></option>
+		  </select>
+		  <select>
+		    <option value="1">Rooms</option>
+		    <option value="2"></option>
+		    <option value="3"></option>
+		    <option value="4"></option>
+		    <option value="5"></option>
+		  </select>
+	    <input type="submit"
+																										   value="Search">
+		  </select>
       </div>
       <div id="tabs-3">
-        <p>Content 3</p>
+        <p>Rentals</p><input type="text" placeholder="Pickup">
+		  <input type="date"><input type="time"><input type="text" placeholder="Return"><input type="date"><input type="time"><input type="submit" value="Search">
       </div>
       <div id="tabs-4">
-        <p>Content 4</p>
+        <p>Cruises</p>
+		  <input type="text" placeholder="Cruising to">
+		  <input type="text"placeholder="Leaving from">
+		 
+		  <input type="date">
+		  <input type="text" placeholder="Duration">
+		  <input type="submit">
       </div>
       <div id="tabs-5">
-        <p>Content 5</p>
+        <p>Tourism</p>
+		  <input type="text"placeholder="Going to">
+		  <input type="date">
+		  <input type="submit">
       </div>
     </div>
   </main>
-  <footer></footer>
+  <footer><p class="foot">© 2025, Isidora Miranda. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
 </wrapper>
 <script type="text/javascript">
 $(function() {
