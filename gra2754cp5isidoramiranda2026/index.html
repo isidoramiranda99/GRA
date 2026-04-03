@@ -21,7 +21,7 @@ function drop(ev) {
 <style type="text/css">
 body {
 	margin: 0;
-	background-color: #FFD6F7;
+	background-color: #BCE9FF;
 }
 wrapper  {
 	margin: auto;
@@ -30,28 +30,65 @@ wrapper  {
 }
 wrapper div {
 	width: 900px;
-	border: thin solid black;
+	border: hidden;
 	height: 600px;
 	margin-top: 25px;
 	margin-right: 25px;
 	margin-left: 25px;
 	margin-bottom: 25px;
-	display: inline-block;
+	display: inline-flex;
 	vertical-align: top;
 }
 div img {
+	height: 100%;
 	width: 100%;
-	height: auto;
+}
+h1 {
+	text-align: center;
+	color: #FFA4D9;
+	text-shadow: 2px 1px 2px #DA86BA;
+	font-size: 70px;
+}
+	#drag1 {
+		height: 300px;
+		width: 400px;
+		
+	}
+	
+	#drag2 {
+		height: 900px;
+		width: 1400px;
+		
+	}
+#drop2 {
+	background-image: url(flowers.png);
+	width: 1366px;
+	height: 768px;
+}
+#drop2 #drag1 {
+	margin: auto;
+	display: block;
+}
+#drop1 {
+	width: 400px;
+	height: 300px;
+}
+footer {
+	text-align: center;
+	color: #FFFFFF;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 }
 </style>
 </head>
 
 <body>
 <wrapper>
-  <div id="drop1" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="usahana.png" alt="" width="88" height="31" id="drag1" draggable="true" ondragstart="drag(event)"></div>
+  <h1>Help the Bee Find its Flower!</h1>
+  <div id="drop1" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="bee.png" alt="" width="60" height="20" id="drag1" draggable="true" ondragstart="drag(event)"></div>
   <div id="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-  <div id="drop3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="usahana2.png" alt="" width="88" height="31" id="drag2" draggable="true" ondragstart="drag(event)"></div>
-  <div id="drop4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
 </wrapper>
+	  <footer>© 2026, Isidora Miranda
+This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</footer>
 </body>
 </html>
